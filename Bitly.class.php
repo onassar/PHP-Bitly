@@ -19,7 +19,7 @@
          * Traits
          * 
          */
-        use RemoteRequests\RateLimits;
+        use RemoteRequests\Traits\RateLimits;
 
         /**
          * _host
@@ -48,16 +48,6 @@
         protected $_token = null;
 
         /**
-         * __construct
-         * 
-         * @access  public
-         * @return  void
-         */
-        public function __construct()
-        {
-        }
-
-        /**
          * _getAuthorizationHeader
          * 
          * @access  protected
@@ -81,22 +71,6 @@
             $header = 'Content-Type: application/json';
             return $header;
         }
-
-        /**
-         * _getCURLRequestHeaders
-         * 
-         * @access  protected
-         * @return  array
-         */
-        // protected function _getCURLRequestHeaders(): array
-        // {
-        //     $headers = parent::_getCURLRequestHeaders();
-        //     $header = $this->_getAuthorizationHeader();
-        //     array_push($headers, $header);
-        //     $header = $this->_getContentTypeHeader();
-        //     array_push($headers, $header);
-        //     return $headers;
-        // }
 
         /**
          * _getHTTPHeaders
