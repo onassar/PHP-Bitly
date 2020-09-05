@@ -4,7 +4,7 @@ PHP SDK for generating short URLs using the Bitly web service.
 ### Supports
 - Shortening a long URL
 
-### Requirements
+### Requires
 - [PHP-RemoteRequests](https://github.com/onassar/PHP-RemoteRequests)
 
 ### Sample shorten call
