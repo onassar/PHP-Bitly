@@ -5,7 +5,7 @@
     use onassar\RemoteRequests;
 
     /**
-     * Bitly
+     * Base
      * 
      * PHP wrapper for Bitly.
      * 
@@ -13,7 +13,7 @@
      * @author  Oliver Nassar <onassar@gmail.com>
      * @extends RemoteRequests\Base
      */
-    class Bitly extends RemoteRequests\Base
+    class Base extends RemoteRequests\Base
     {
         /**
          * Traits
