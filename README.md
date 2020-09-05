@@ -9,7 +9,7 @@ PHP SDK for generating short URLs using the Bitly web service.
 
 ### Sample shorten call
 ``` php
-$client = new onassar\Bitly\Bitly();
+$client = new onassar\Bitly\Base();
 $client->setToken('***');
 $client->setTimeout(10);
 $longURL = 'https://google.com/';
